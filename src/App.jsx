@@ -3,10 +3,13 @@ import AppointmentSection from "./components/AppointmentSection";
 import Banner from "./components/Banner";
 import BannerSection from "./components/BannerSection";
 import BlogSection from "./components/BlogSection";
+import ChamberSection from "./components/ChamberSection";
 import ContactSection from "./components/ContactSection";
 import DoctorsSection from "./components/DoctorsSection";
+import DoctorsSectionTwo from "./components/DoctorsSectionTwo";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import NavigationBar from "./components/NavigationBar";
 import ServicesSection from "./components/ServicesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import TrustSection from "./components/TrustSection";
@@ -14,10 +17,11 @@ import TrustSection from "./components/TrustSection";
 function App() {
   return (
     <>
-      <Navbar />
+      <NavigationBar />
       <BannerSection />
       <ServicesSection />
-      <DoctorsSection />
+      <ChamberSection />
+      <DoctorsSectionTwo />
       <AppointmentSection />
       <TestimonialsSection />
       <BlogSection />

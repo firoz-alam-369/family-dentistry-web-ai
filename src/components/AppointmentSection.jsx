@@ -10,15 +10,21 @@ const AppointmentSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Online Form */}
         <form className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 space-y-4">
+          {/* Name */}
           <div>
             <label className="block text-sm font-semibold mb-1 text-slate-700 dark:text-slate-300">
               Name | নাম
             </label>
-
-            <input className="w-full px-4 py-2 rounded-md bg-slate-100 dark:bg-slate-700 text-gray-900 dark:text-gray-100" />
+            <input
+              type="text"
+              placeholder="Your full name"
+              className="w-full px-4 py-2 rounded-md bg-slate-100 dark:bg-slate-700 text-gray-900 dark:text-white focus:outline-none"
+            />
           </div>
+
+          {/* Phone */}
           <div>
-            <label className="block text-sm font-semibold mb-1">
+            <label className="block text-sm font-semibold mb-1 text-slate-700 dark:text-slate-300">
               Phone | ফোন নম্বর
             </label>
             <input
@@ -27,8 +33,10 @@ const AppointmentSection = () => {
               className="w-full px-4 py-2 rounded-md bg-slate-100 dark:bg-slate-700 text-gray-900 dark:text-white focus:outline-none"
             />
           </div>
+
+          {/* Date */}
           <div>
-            <label className="block text-sm font-semibold mb-1">
+            <label className="block text-sm font-semibold mb-1 text-slate-700 dark:text-slate-300">
               Date | তারিখ
             </label>
             <input
@@ -36,8 +44,10 @@ const AppointmentSection = () => {
               className="w-full px-4 py-2 rounded-md bg-slate-100 dark:bg-slate-700 text-gray-900 dark:text-white focus:outline-none"
             />
           </div>
+
+          {/* Service */}
           <div>
-            <label className="block text-sm font-semibold mb-1">
+            <label className="block text-sm font-semibold mb-1 text-slate-700 dark:text-slate-300">
               Service | সেবা
             </label>
             <select className="w-full px-4 py-2 rounded-md bg-slate-100 dark:bg-slate-700 text-gray-900 dark:text-white focus:outline-none">
@@ -48,9 +58,22 @@ const AppointmentSection = () => {
               <option>Emergency Care</option>
             </select>
           </div>
+
+          {/* Chamber Selection */}
+          <div>
+            <label className="block text-sm font-semibold mb-1 text-slate-700 dark:text-slate-300">
+              Preferred Chamber | পছন্দের চেম্বার
+            </label>
+            <select className="w-full px-4 py-2 rounded-md bg-slate-100 dark:bg-slate-700 text-gray-900 dark:text-white focus:outline-none">
+              <option>Banani Chamber</option>
+              <option>Dhanmondi Chamber</option>
+            </select>
+          </div>
+
+          {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-3 bg-gradient-to-r from-teal-500 to-blue-600 text-white font-semibold rounded-md hover:scale-105 transition"
+            className="w-full py-3 bg-gradient-to-r from-fuchsia-500 to-violet-600 text-white font-semibold rounded-md hover:scale-105 transition"
           >
             ✅ Confirm Appointment | ✅ অ্যাপয়েন্টমেন্ট নিশ্চিত করুন
           </button>

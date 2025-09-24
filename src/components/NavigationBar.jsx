@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTooth } from "react-icons/fa";
+import { Link } from "react-router";
 
 const NavigationBar = () => {
   return (
@@ -15,15 +16,15 @@ const NavigationBar = () => {
 
         {/* Center: Navigation Links */}
         <nav className="hidden md:flex gap-6 text-sm font-medium">
-          <a href="#" className="hover:text-fuchsia-300 transition">
+          <Link to={"/"} className="hover:text-fuchsia-300 transition">
             Home
-          </a>
-          <a href="#" className="hover:text-fuchsia-300 transition">
+          </Link>
+          <Link to={"/about"} className="hover:text-fuchsia-300 transition">
             About Us
-          </a>
-          <a href="#" className="hover:text-fuchsia-300 transition">
+          </Link>
+          <Link to={"/services"} className="hover:text-fuchsia-300 transition">
             Services
-          </a>
+          </Link>
           <a href="#" className="hover:text-fuchsia-300 transition">
             Doctors
           </a>

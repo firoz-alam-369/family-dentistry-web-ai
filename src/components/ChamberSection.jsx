@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const chambers = [
   {
@@ -8,6 +9,7 @@ const chambers = [
     hours: "Sun–Fri: 10 AM – 8 PM",
     email: "banani@familydental.com",
     bg: "from-indigo-700 via-violet-600 to-indigo-800",
+    image: "https://i.ibb.co.com/35WXpd4L/clinic-banani.png",
   },
   {
     name: "Dhanmondi Chamber",
@@ -16,6 +18,7 @@ const chambers = [
     hours: "Sun–Fri: 9 AM – 9 PM",
     email: "dhanmondi@familydental.com",
     bg: "from-slate-700 via-zinc-700 to-slate-800",
+    image: "https://i.ibb.co.com/35WXpd4L/clinic-banani.png",
   },
 ];
 
@@ -30,16 +33,28 @@ const ChamberSection = () => {
         {chambers.map((chamber, index) => (
           <div
             key={index}
-            className={`rounded-xl shadow-xl p-6 text-white animate-fade-in delay-[200ms] bg-gradient-to-br ${chamber.bg} hover:scale-[1.02] transition`}
+            className={`flex space-x-12 items-center rounded-xl shadow-xl p-6 text-white animate-fade-in delay-[200ms] bg-gradient-to-br ${chamber.bg} hover:scale-[1.02] transition`}
           >
-            <h3 className="text-2xl font-bold mb-2">{chamber.name}</h3>
-            <p className="text-sm mb-2">📍 {chamber.address}</p>
-            <p className="text-sm mb-2">📞 {chamber.phone}</p>
-            <p className="text-sm mb-2">⏰ {chamber.hours}</p>
-            <p className="text-sm mb-2">✉️ {chamber.email}</p>
-            <button className="mt-4 px-4 py-2 bg-white text-zinc-900 font-semibold rounded-md hover:bg-zinc-100 transition">
-              📅 Book Appointment
-            </button>
+            <div>
+              <h3 className="text-2xl font-bold mb-2">{chamber.name}</h3>
+              <p className="text-sm mb-2">📍 {chamber.address}</p>
+              <p className="text-sm mb-2">📞 {chamber.phone}</p>
+              <p className="text-sm mb-2">⏰ {chamber.hours}</p>
+              <p className="text-sm mb-6">✉️ {chamber.email}</p>
+              <Link
+                to={"/appointment"}
+                className="mt-14 px-4 py-2 bg-white text-zinc-900 font-semibold rounded-md hover:bg-zinc-100 transition"
+              >
+                📅 Book Appointment
+              </Link>
+            </div>
+            <div>
+              <img
+                src={chamber.image}
+                alt={chamber.name}
+                className="w-52 h-52  object-contain"
+              />
+            </div>
           </div>
         ))}
       </div>

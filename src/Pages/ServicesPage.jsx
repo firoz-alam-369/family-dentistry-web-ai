@@ -22,7 +22,7 @@ const services = [
     description:
       "Smile makeovers, teeth whitening, and aesthetic restorations for confident smiles.",
     icon: <FaSmile />,
-    image: "https://via.placeholder.com/400x250?text=Cosmetic+Dentistry",
+    image: "https://i.ibb.co.com/zLqpPJs/cosmetic.png",
     bg: "from-fuchsia-600 via-pink-500 to-fuchsia-700",
   },
   {
@@ -30,7 +30,7 @@ const services = [
     description:
       "Permanent tooth replacement solutions with titanium-rooted implants.",
     icon: <FaTeethOpen />,
-    image: "https://via.placeholder.com/400x250?text=Dental+Implants",
+    image: "https://i.ibb.co.com/TMt46pP6/impant.png",
     bg: "from-slate-700 via-zinc-700 to-slate-800",
   },
   {
@@ -38,7 +38,7 @@ const services = [
     description:
       "Gentle care for children including fluoride treatments and early orthodontics.",
     icon: <FaChild />,
-    image: "https://via.placeholder.com/400x250?text=Pediatric+Dentistry",
+    image: "https://i.ibb.co.com/LDYDbFg7/pediatric.png",
     bg: "from-violet-600 via-purple-500 to-violet-700",
   },
   {
@@ -46,14 +46,14 @@ const services = [
     description:
       "Braces and aligners to correct misaligned teeth and improve bite.",
     icon: <FaXRay />,
-    image: "https://via.placeholder.com/400x250?text=Orthodontics",
+    image: "https://i.ibb.co.com/DfWFyy0g/orthodontic.png",
     bg: "from-emerald-600 via-teal-500 to-emerald-700",
   },
   {
     title: "Emergency Care",
     description: "24/7 urgent dental care for pain, trauma, or broken teeth.",
     icon: <FaHeartbeat />,
-    image: "https://via.placeholder.com/400x250?text=Emergency+Care",
+    image: "https://i.ibb.co.com/cc7nk813/emergency.png",
     bg: "from-rose-600 via-rose-500 to-rose-700",
   },
 ];

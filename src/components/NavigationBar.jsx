@@ -25,21 +25,22 @@ const NavigationBar = () => {
           <Link to={"/services"} className="hover:text-fuchsia-300 transition">
             Services
           </Link>
-          <a href="#" className="hover:text-fuchsia-300 transition">
+          <Link to={"/doctors"} className="hover:text-fuchsia-300 transition">
             Doctors
-          </a>
-          <a href="#" className="hover:text-fuchsia-300 transition">
+          </Link>
+          <Link
+            to={"/appointment"}
+            className="hover:text-fuchsia-300 transition"
+          >
             Appointment
-          </a>
-          <a href="#" className="hover:text-fuchsia-300 transition">
-            Testimonials
-          </a>
-          <a href="#" className="hover:text-fuchsia-300 transition">
+          </Link>
+
+          <Link to={"/blog"} className="hover:text-fuchsia-300 transition">
             Blog / Oral Tips
-          </a>
-          <a href="#" className="hover:text-fuchsia-300 transition">
+          </Link>
+          <Link to={"/contact"} className="hover:text-fuchsia-300 transition">
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* Right: Language Switcher */}

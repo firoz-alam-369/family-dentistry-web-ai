@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const AboutPage = () => {
   return (
@@ -47,12 +48,12 @@ const AboutPage = () => {
             pediatric care, and cosmetic dentistry, we ensure every smile gets
             the attention it deserves.
           </p>
-          <a
-            href="/doctors"
+          <Link
+            to="/doctors"
             className="inline-block px-5 py-2 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white rounded-md hover:scale-105 transition font-semibold"
           >
             Meet Our Doctors
-          </a>
+          </Link>
         </div>
       </div>
     </section>

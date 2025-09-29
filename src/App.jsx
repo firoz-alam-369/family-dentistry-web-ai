@@ -17,7 +17,7 @@ import TrustSection from "./components/TrustSection";
 function App() {
   return (
     <>
-      <NavigationBar />
+      <NavigationBar className="fixed" />
       <BannerSection />
       <ServicesSection />
       <ChamberSection />

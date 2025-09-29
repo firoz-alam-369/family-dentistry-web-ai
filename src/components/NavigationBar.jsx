@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const NavigationBar = () => {
   return (
-    <header className="bg-gradient-to-r from-indigo-900 via-violet-800 to-indigo-900 text-white shadow-md">
+    <header className="sticky top-0 z-100 bg-gradient-to-r from-indigo-900 via-violet-800 to-indigo-900 text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Left: Logo + Title */}
         <div className="flex items-center gap-2">

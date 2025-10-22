@@ -8,11 +8,12 @@ import TestimonialsSection from "../../components/TestimonialsSection";
 import BlogSection from "../../components/BlogSection";
 import ContactSection from "../../components/ContactSection";
 import TrustSection from "../../components/TrustSection";
+import HeroBanner from "../../components/HeroBanner";
 
 const Home = () => {
   return (
     <div>
-      <BannerSection />
+      <HeroBanner />
       <ServicesSection />
       <ChamberSection />
       <DoctorsSectionTwo />

@@ -24,7 +24,7 @@ const chambers = [
 
 const ChamberSection = () => {
   return (
-    <section className="py-12 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-zinc-100 via-white to-zinc-200 dark:from-gray-950 dark:via-slate-900 dark:to-gray-800 text-zinc-900 dark:text-zinc-100">
+    <section className="py-8 px-2 md:px-8 lg:px-16 bg-gradient-to-br from-zinc-100 via-white to-zinc-200 dark:from-gray-950 dark:via-slate-900 dark:to-gray-800 text-zinc-900 dark:text-zinc-100">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-violet-500 dark:text-violet-400 mb-10 animate-fade-in">
         🏥 Family Dentistry Chambers | ফ্যামিলি ডেন্টিস্ট্রি চেম্বার
       </h2>
@@ -43,7 +43,7 @@ const ChamberSection = () => {
               <p className="text-sm mb-6">✉️ {chamber.email}</p>
               <Link
                 to={"/appointment"}
-                className="mt-14 px-4 py-2 bg-white text-zinc-900 font-semibold rounded-md hover:bg-zinc-100 transition"
+                className="mt-14 px-4 py-2 bg-white text-zinc-900 font-semibold rounded-md hover:bg-zinc-100 transition sm:text-xl"
               >
                 📅 Book Appointment
               </Link>

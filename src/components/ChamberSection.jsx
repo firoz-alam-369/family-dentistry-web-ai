@@ -48,7 +48,7 @@ const ChamberSection = () => {
                 📅 Book Appointment
               </Link>
             </div>
-            <div>
+            <div className="hidden md:block">
               <img
                 src={chamber.image}
                 alt={chamber.name}
